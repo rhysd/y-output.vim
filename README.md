@@ -1,7 +1,10 @@
 Syntax file for `y.output`
 ==========================
 
-Syntax file for `y.output`. `y.output` is a generated file by YACC.
+Syntax file for `y.output`. `y.output` is a generated file by YACC. It describes how the generated
+parser behaves and is helpful for debug.
+
+<img src="https://github.com/rhysd/ss/blob/master/y-output.vim/main.png?raw=true" alt="screenshot" width="739"/>
 
 ## License
 
