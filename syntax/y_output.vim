@@ -6,7 +6,7 @@ syn match youtputWarn "\<shift/reduce\>\%( conflicts\=\)\=" display skipwhite
 syn match youtputError "\<reduce/reduce\>\%( conflicts\=\)\=" display skipwhite
 syn match youtputState "^state \d\+$" display skipwhite
 syn match youtputCurrentState "^\s\+[^:]\+:\s\+" display skipwhite
-syn match youtputShiftReduce "^\s\+\S\+\s\+\%(shift\|reduce\|accept\|error\)\>" contains=youtputSRTarget,youtputSRWords
+syn match youtputShiftReduce "^\s\+[^[:space:]:]\+\s\+\%(shift\|reduce\|accept\|error\)\>" contains=youtputSRTarget,youtputSRWords
 syn match youtputSRTarget "^\s\+\S\+\s\+" display skipwhite nextgroup=youtputShiftReduceWords contained containedin=youtputShiftReduce
 syn match youtputSRWords "\<\%(shift\|reduce\|accept\|error\)\>" display skipwhite contained containedin=youtputShiftReduce
 syn match youtputTableGoto "^\s\+\S\+\s\+goto\>" contains=youtputGoto
